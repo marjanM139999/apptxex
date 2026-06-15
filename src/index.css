@@ -1,0 +1,48 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@300;400;500;600&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, monospace;
+}
+
+body {
+  font-family: var(--font-sans);
+  background-color: #0b0c10;
+  color: #f3f4f6;
+  overflow-x: hidden;
+  margin: 0;
+  padding: 0;
+}
+
+/* Custom animations for the neon circles & glows */
+@keyframes neonPulse {
+  0%, 100% {
+    opacity: 0.8;
+    filter: drop-shadow(0 0 5px currentColor);
+  }
+  50% {
+    opacity: 1;
+    filter: drop-shadow(0 0 15px currentColor);
+  }
+}
+
+.animate-neon-pulse {
+  animation: neonPulse 3s infinite ease-in-out;
+}
+
+/* Base custom interactive scrollbar */
+::-webkit-scrollbar {
+  width: 6px;
+  height: 6px;
+}
+::-webkit-scrollbar-track {
+  background: #0d0f12;
+}
+::-webkit-scrollbar-thumb {
+  background: #1f2937;
+  border-radius: 4px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: #374151;
+}

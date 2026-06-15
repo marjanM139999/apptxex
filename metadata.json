@@ -1,0 +1,6 @@
+{
+  "name": "Neon Control Panel",
+  "description": "An interactive, ultra-modern futuristic dashboard designed exactly with neon glow switches, data feeds, and sci-fi telemetry controls.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
